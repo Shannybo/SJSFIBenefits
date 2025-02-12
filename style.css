@@ -1,0 +1,97 @@
+body{
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: inter;
+    
+}
+html{
+    scrollbar-width: normal;
+    scrollbar-color: white #0F171C;
+}
+p{
+    text-align: center;
+    font-size: 35px;
+}
+#active{
+    background-color: #a7a7a7;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: #b2ffb6;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+}
+h1 a{
+    text-decoration: none;
+    color: black;
+}
+h2{
+    text-align: center;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: #a7a7a7;
+}
+.navbar li{
+    float: left;
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+main .btn-div {
+    text-align: center;
+}
+main .btn-div #btn{
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    padding: 0.7em 2em;
+    border: 3px solid #FF0072;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #ff0072;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+main .btn-div #btn:before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #ff0072;
+    z-index: -1;
+}
+main .btn-div #btn:hover{
+    color: white;
+}
+main .btn-div #btn:hover:before, button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+main .btn-div #btn:active{
+    transform: scale(0.9);
+}
