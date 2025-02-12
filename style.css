@@ -83,7 +83,7 @@ button:before{
     background-color: #ff0072;
     z-index: -1;
 }
-button:hover{
+main .btn-div #btn:hover{
     color: white;
 }
 button:hover:before, button:focus:before {
