@@ -71,7 +71,7 @@ main .btn-div #btn{
     transition: 0.3s ease all;
     z-index: 1;
 }
-main .btn-div #btn:before{
+button:before{
     transition: 0.5s all ease;
     position: absolute;
     top: 0;
@@ -83,15 +83,15 @@ main .btn-div #btn:before{
     background-color: #ff0072;
     z-index: -1;
 }
-main .btn-div #btn:hover{
+button:hover{
     color: white;
 }
-main .btn-div #btn:hover:before, button:focus:before {
+button:hover:before, button:focus:before {
     transition: 0.5s all ease;
     left: 0;
     right: 0;
     opacity: 1;
 }
-main .btn-div #btn:active{
+button:active{
     transform: scale(0.9);
 }
